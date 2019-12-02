@@ -1,0 +1,88 @@
+<![LOG[LOGGING: Finalize process ID set to 68]LOG]!><time="11:49:34.083+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="60" file="tslogging.cpp:1864">
+<![LOG[==============================[ TSBootShell.exe ]==============================]LOG]!><time="11:49:34.083+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="60" file="bootshell.cpp:1206">
+<![LOG[Succeeded loading resource DLL 'X:\sms\bin\x64\1033\TSRES.DLL']LOG]!><time="11:49:34.115+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="60" file="util.cpp:972">
+<![LOG[Debug shell is enabled]LOG]!><time="11:49:34.115+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="60" file="bootshell.cpp:1217">
+<![LOG[Waiting for PNP initialization...]LOG]!><time="11:49:34.115+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:69">
+<![LOG[RAM Disk Boot Path: NET(0)\SOME.WIM]LOG]!><time="11:49:34.115+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="configpath.cpp:322">
+<![LOG[Booted from network (PXE)]LOG]!><time="11:49:34.115+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="configpath.cpp:337">
+<![LOG[Network(PXE) path: X:\sms\data\]LOG]!><time="11:49:34.130+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="configpath.cpp:339">
+<![LOG[Found config path X:\sms\data\]LOG]!><time="11:49:34.130+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:656">
+<![LOG[Booting from removable media, not restoring bootloaders on hard drive]LOG]!><time="11:49:34.130+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:721">
+<![LOG[X:\sms\data\WinPE does not exist.]LOG]!><time="11:49:34.130+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:738">
+<![LOG[X:\_SmsTsWinPE\WinPE does not exist.]LOG]!><time="11:49:34.130+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:752">
+<![LOG[Executing command line: wpeinit.exe -winpe]LOG]!><time="11:49:34.130+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:1011">
+<![LOG[The command completed successfully.]LOG]!><time="11:49:36.021+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:1093">
+<![LOG[Setting offline Windows drive and OS root directory to TS envirtonment.]LOG]!><time="11:49:36.021+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:806">
+<![LOG[  Processing volume C:\ ]LOG]!><time="11:49:36.021+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:549">
+<![LOG[OfflineRegistry::Init("C:\WINDOWS")]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="0" thread="296" file="offlineregistry.cpp:172">
+<![LOG[Loading offline registry hive "C:\WINDOWS\system32\config\software" into HKLM\OfflineRegistry1]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="0" thread="296" file="offlineregistry.cpp:64">
+<![LOG[RegLoadKey( oRegKeyHKLM, sRegKey, sRegHivPath), HRESULT=80070003 (..\offlineregistry.cpp,68)]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="0" thread="296" file="offlineregistry.cpp:68">
+<![LOG[Failed to load "C:\WINDOWS\system32\config\software" (0x80070003).]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="3" thread="296" file="offlineregistry.cpp:68">
+<![LOG[LoadHive( szPathBuffer, m_sRegKeySoftware, m_oRegKeySoftware ), HRESULT=80070003 (..\offlineregistry.cpp,190)]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="0" thread="296" file="offlineregistry.cpp:190">
+<![LOG[Failed to load the offline SOFTWARE registry (0x80070003).]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="3" thread="296" file="offlineregistry.cpp:190">
+<![LOG[m_oOfflineRegistry.Init(pszSystemRoot), HRESULT=80070003 (..\offlineos.cpp,734)]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="0" thread="296" file="offlineos.cpp:734">
+<![LOG[Found directory C:\WINDOWS that could contain an OS, but initialization failed. This directory probably doesn't contain an OS]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="0" thread="296" file="offlineos.cpp:79">
+<![LOG[pOs != NULL, HRESULT=80070490 (..\offlineos.cpp,89)]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="0" thread="296" file="offlineos.cpp:89">
+<![LOG[Unable to find a Windows system root at C:\]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="offlineos.cpp:89">
+<![LOG[  Processing volume D:\ ]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:549">
+<![LOG[  Volume D:\ is not a local hard drive.]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:552">
+<![LOG[  Processing volume X:\ ]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:549">
+<![LOG[  Volume X:\ is not a local hard drive.]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:552">
+<![LOG[_OSDDetectedWinDrive='', _OSDDetectedWinDir='']LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:603">
+<![LOG[Starting DNS client service.]LOG]!><time="11:49:36.568+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:817">
+<![LOG[Executing command line: X:\sms\bin\x64\TsmBootstrap.exe /env:WinPE /configpath:X:\sms\data\]LOG]!><time="11:49:37.099+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:1011">
+<![LOG[The command completed successfully.]LOG]!><time="11:49:37.099+480" date="08-07-2019" component="TSBootShell" context="" type="1" thread="296" file="bootshell.cpp:1093">
+<![LOG[Failed to open "SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" (0x80070002).]LOG]!><time="12:54:04.166-60" date="08-07-2019" component="ApplyOperatingSystem" context="" type="2" thread="1516" file="offlineregistry.cpp:528">
+<![LOG[==============================[ TSMBootStrap.exe ]==============================]LOG]!><time="11:49:37.224+480" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="1340" file="tsmbootstrap.cpp:1230">
+<![LOG[Command line: "C:\WINDOWS\CCM\TSMBootstrap.exe" /env:Gina /configpath:C:\_SMSTaskSequence /bootcount:1]LOG]!><time="12:35:17.929+00" date="08-07-2019" component="TSMBootstrap" context="" type="0" thread="420" file="tsmbootstrap.cpp:1231">
+<![LOG[Current OS version is 10.0.18362.0]LOG]!><time="12:35:17.976+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="util.cpp:3618">
+<![LOG[Logging successfully initialized.]LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="tsmbootstrap.cpp:990">
+<![LOG[Resuming Task Sequence in Full OS]LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="tsmbootstrap.cpp:998">
+<![LOG[Starting tsmsbootstrap.exe version 5.0.8740.1000 from location 'C:\WINDOWS\CCM\TSMBootstrap.exe']LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="tsmbootstrap.cpp:999">
+<![LOG[TS environment is not initialized]LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="3" thread="420" file="tslogging.cpp:2553">
+<![LOG[==========[ TsProgressUI started in process 3792 ]==========]LOG]!><time="12:35:28.804+00" date="08-07-2019" component="TsProgressUI" context="" type="1" thread="4880" file="winmain.cpp:330">
+<![LOG[Failed to set TS logging read from TS environment]LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="2" thread="420" file="tsmbootstrap.cpp:316">
+<![LOG[Pass DP auth token and super peer token(if available) to the client framework in provisioning mode]LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="tsmbootstrap.cpp:349">
+<![LOG[setting the DP auth token ]LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="tsmbootstrap.cpp:359">
+<![LOG[Executing command line: "C:\WINDOWS\CCM\TsProgressUI.exe" /Register:WinPE]LOG]!><time="12:35:27.726+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="CommandLine.cpp:819">
+<![LOG[==========[ TsProgressUI started in process 3792 ]==========]LOG]!><time="12:35:28.804+00" date="08-07-2019" component="TsProgressUI" context="" type="1" thread="4880" file="winmain.cpp:330">
+<![LOG[Failed to find property 'AutoApplyDeployment' in 'CCM_ApplicationManagementClientConfig' class defintion. Error 0x80041002. Default value will be used for this property]LOG]!><time="12:35:36.616+00" date="08-07-2019" component="TSManager" context="" type="2" thread="8" file="WmiObjectXml.cpp:332">
+<![LOG[Policy complied successfully in WMI 'root\ccm\policy\defaultmachine\requestedconfig' namespace]LOG]!><time="12:35:36.616+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="utils.cpp:3543">
+<![LOG[End TS policy compilation]LOG]!><time="12:35:36.616+00" date="08-07-2019" component="TSManager" context="" type="0" thread="8" file="utils.cpp:3547">
+<![LOG[Start to compile TS policy]LOG]!><time="12:35:36.616+00" date="08-07-2019" component="TSManager" context="" type="0" thread="8" file="utils.cpp:3442">
+<![LOG[Policy complied successfully in WMI 'root\ccm\policy\defaultmachine\requestedconfig' namespace]LOG]!><time="12:35:36.616+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="utils.cpp:3543">
+<![LOG[End TS policy compilation]LOG]!><time="12:35:36.616+00" date="08-07-2019" component="TSManager" context="" type="0" thread="8" file="utils.cpp:3547">
+<![LOG[Updating settings in \\.\root\ccm\policy\machine\actualconfig]LOG]!><time="12:35:36.632+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="policyutil.cpp:8365">
+<![LOG[Total RequestedConfig policy instance(s) : 539]LOG]!><time="12:35:37.054+00" date="08-07-2019" component="TSManager" context="" type="0" thread="8" file="policyutil.cpp:8513">
+<![LOG[New/Changed ActualConfig policy instance(s) : 11]LOG]!><time="12:35:37.148+00" date="08-07-2019" component="TSManager" context="" type="0" thread="8" file="policyutil.cpp:8603">
+<![LOG[Policy evaluation initiated]LOG]!><time="12:35:37.148+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="utils.cpp:4626">
+<![LOG[Waiting for policy to be compiled in 'root\ccm\policy\machine' namespace ]LOG]!><time="12:35:37.163+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="utils.cpp:3363">
+<![LOG[Policy verification done]LOG]!><time="12:35:37.382+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="utils.cpp:3412">
+<![LOG[Config policies compiled successfully]LOG]!><time="12:35:37.382+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="utils.cpp:3758">
+<![LOG[==============================[ TSMBootStrap.exe ]==============================]LOG]!><time="11:49:37.224+480" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="1340" file="tsmbootstrap.cpp:1230">
+<![LOG[Command line: "C:\WINDOWS\CCM\TSMBootstrap.exe" /env:Gina /configpath:C:\_SMSTaskSequence /bootcount:1]LOG]!><time="12:35:17.929+00" date="08-07-2019" component="TSMBootstrap" context="" type="0" thread="420" file="tsmbootstrap.cpp:1231">
+<![LOG[Current OS version is 10.0.18362.0]LOG]!><time="12:35:17.976+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="util.cpp:3618">
+<![LOG[Logging successfully initialized.]LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="tsmbootstrap.cpp:990">
+<![LOG[Resuming Task Sequence in Full OS]LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="tsmbootstrap.cpp:998">
+<![LOG[Starting tsmsbootstrap.exe version 5.0.8740.1000 from location 'C:\WINDOWS\CCM\TSMBootstrap.exe']LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="tsmbootstrap.cpp:999">
+<![LOG[TS environment is not initialized]LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="3" thread="420" file="tslogging.cpp:2553">
+<![LOG[==========[ TsProgressUI started in process 3792 ]==========]LOG]!><time="12:35:28.804+00" date="08-07-2019" component="TsProgressUI" context="" type="1" thread="4880" file="winmain.cpp:330">
+<![LOG[Failed to set TS logging read from TS environment]LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="2" thread="420" file="tsmbootstrap.cpp:316">
+<![LOG[Pass DP auth token and super peer token(if available) to the client framework in provisioning mode]LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="tsmbootstrap.cpp:349">
+<![LOG[setting the DP auth token ]LOG]!><time="12:35:27.710+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="tsmbootstrap.cpp:359">
+<![LOG[Executing command line: "C:\WINDOWS\CCM\TsProgressUI.exe" /Register:WinPE]LOG]!><time="12:35:27.726+00" date="08-07-2019" component="TSMBootstrap" context="" type="1" thread="420" file="CommandLine.cpp:819">
+<![LOG[==========[ TsProgressUI started in process 3792 ]==========]LOG]!><time="12:35:28.804+00" date="08-07-2019" component="TsProgressUI" context="" type="1" thread="4880" file="winmain.cpp:330">
+<![LOG[Failed to find property 'AutoApplyDeployment' in 'CCM_ApplicationManagementClientConfig' class defintion. Error 0x80041002. Default value will be used for this property]LOG]!><time="12:35:36.616+00" date="08-07-2019" component="TSManager" context="" type="2" thread="8" file="WmiObjectXml.cpp:332">
+<![LOG[Policy complied successfully in WMI 'root\ccm\policy\defaultmachine\requestedconfig' namespace]LOG]!><time="12:35:36.616+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="utils.cpp:3543">
+<![LOG[End TS policy compilation]LOG]!><time="12:35:36.616+00" date="08-07-2019" component="TSManager" context="" type="0" thread="8" file="utils.cpp:3547">
+<![LOG[Start to compile TS policy]LOG]!><time="12:35:36.616+00" date="08-07-2019" component="TSManager" context="" type="0" thread="8" file="utils.cpp:3442">
+<![LOG[Policy complied successfully in WMI 'root\ccm\policy\defaultmachine\requestedconfig' namespace]LOG]!><time="12:35:36.616+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="utils.cpp:3543">
+<![LOG[End TS policy compilation]LOG]!><time="12:35:36.616+00" date="08-07-2019" component="TSManager" context="" type="0" thread="8" file="utils.cpp:3547">
+<![LOG[Updating settings in \\.\root\ccm\policy\machine\actualconfig]LOG]!><time="12:35:36.632+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="policyutil.cpp:8365">
+<![LOG[Total RequestedConfig policy instance(s) : 539]LOG]!><time="12:35:37.054+00" date="08-07-2019" component="TSManager" context="" type="0" thread="8" file="policyutil.cpp:8513">
+<![LOG[New/Changed ActualConfig policy instance(s) : 11]LOG]!><time="12:35:37.148+00" date="08-07-2019" component="TSManager" context="" type="0" thread="8" file="policyutil.cpp:8603">
+<![LOG[Policy evaluation initiated]LOG]!><time="12:35:37.148+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="utils.cpp:4626">
+<![LOG[Waiting for policy to be compiled in 'root\ccm\policy\machine' namespace ]LOG]!><time="12:35:37.163+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="utils.cpp:3363">
+<![LOG[Policy verification done]LOG]!><time="12:35:37.382+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="utils.cpp:3412">
+<![LOG[Config policies compiled successfully]LOG]!><time="12:35:37.382+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="utils.cpp:3758">
+<![LOG[****************************************************************************]LOG]!><time="12:35:37.476+00" date="08-07-2019" component="TSManager" context="" type="1" thread="8" file="tsmanager.cpp:1266">

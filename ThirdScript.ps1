@@ -21,15 +21,3 @@ Get-Content $logFile |
     }
 
     Write-Host $errors.Count 'amount of unique errors'
-
-
-
-#Gets the file
-Get-Content $logFile |
-    Foreach-Object { #Supplies each line of the text file into the for loop
-        #Select-String -Pattern '(\[Failed.*\]).*time\=\"([0-9][0-9]:[0-9][0-9]:[0-9][0-9]\.[0-9][0-9][0-9]\+[0-9][0-9][0-9])\"\sdate=\"([0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9])' $_
-        #$errorMsg, $time, $date = $_.Matches[0].Groups[1..3].Value
-        #echo 'The error message is: ' $errorMsg
-        #echo 'The time of the error is ' $time
-        #echo 'The date of the error is ' $date
-    }

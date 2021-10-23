@@ -1,4 +1,4 @@
-﻿$logFile = 'C:\Users\dwild8\OneDrive - DXC Production\Documents\Powershell\Challenges\3\log.log'
+﻿$logFile = "$PSScriptRoot\log.log"
 $count = 0
 $errors = @()
 #Get time, date and error message
